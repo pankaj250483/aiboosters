@@ -283,6 +283,7 @@ button:hover {
   flex-wrap: wrap;
   align-content: center;
   gap: 0 48px;
+  padding-bottom: 25px;
 }
 .r-g-p-d {
   flex-direction: column;

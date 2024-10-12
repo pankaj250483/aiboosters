@@ -55,7 +55,7 @@
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                 <img
-                class="ogo-ai-boosters-header-icon"
+                class="logo-ai-boosters-header-icon"
                 loading="lazy"
                 alt="AiBoosters UK"
                 src="csbtenants/images/logo-ai-boosters-header_2x.png"
@@ -66,12 +66,7 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
+                  
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Dropdown
@@ -83,13 +78,11 @@
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                  </li>
+                  
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                  
                 </form>
               </div>
             </div>
@@ -108,20 +101,22 @@
             <div class="hero">
               <div class="middle-header">
                 <div class="private-service">
+                  <a href="mailto:contact@aiboosters.co.uk" class="contact">Home</a>
+              </div>
+                <div class="private-service">
                     <a href="mailto:contact@aiboosters.co.uk" class="contact">Contact</a>
                 </div>                  
                 <div class="private-service1">
                     <a href="{% url 'pricing_table' %}" class="pricing" id="pricing-link">Pricing</a>
                 </div>
-                <button class="bouton-log-in show-pricing menubutton" id="show-pricing-button">
-                  <div class="build-a-chatbot">Build a chatbot for free</div>
+                
+                <button class="button" id="login-button">
+                  <div class="log-in">Log in</div>
                 </button>
               </div>
             </div>
             <div class="juliet-image">
-              <button class="button" id="login-button">
-                <div class="log-in">Log in</div>
-              </button>
+             
             </div>
           </div>
         </header>
