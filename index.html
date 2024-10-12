@@ -4,329 +4,313 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="indexpage.css">
-    <link rel="stylesheet" href="global.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic A1:wght@400&display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="indexpage.css">
+  <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic A1:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
 
-    <title>Customer Service Bot Juliet</title>
-	  <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+  <title>Customer Service Bot Juliet</title>
+  <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
 
-    <style>
-        /* Your existing styles here */
-        .stripe-pricing-table {
-            background-color: rgba(255, 255, 255, 0);
-            /* white color with 0 opacity */
-        }
-        body.background {          
-            background-size: cover;
-            background-position: bottom;
-            background-attachment: fixed;
-            min-height: 100%;
-            max-width: 100%;
-          }
-        a {
-              text-decoration: none;
-              color: inherit; /* This will keep the text color the same as the surrounding text */
-          }
-  
-    </style>      
+  <style>
+    /* Your existing styles here */
+    .stripe-pricing-table {
+      background-color: rgba(255, 255, 255, 0);
+      /* white color with 0 opacity */
+    }
+
+    body.background {
+      background-size: cover;
+      background-position: bottom;
+      background-attachment: fixed;
+      min-height: 100%;
+      max-width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      /* This will keep the text color the same as the surrounding text */
+    }
+  </style>
 </head>
 
 <body class="background">
-    <div class="landing-page">
-      <section class="r-g-p-d">
+  <div class="landing-page">
+    <section class="r-g-p-d">
 
- 
 
-        <header class="built-in-europe">
-          <div class="rgpd-banner">
-            <div class="built-in-europe1">Built in Europe.   First on privacy.</div>
-          </div>
 
-          <div class="header">
-            <div class="container">
-              <div class="row align-items-center justify-content-around">
-              <div class="col-md-4">
-            <div class="logo-header">
-              <img
-                class="logo-ai-boosters-header-icon"
-                loading="lazy"
-                alt="AiBoosters UK"
-                src="csbtenants/images/logo-ai-boosters-header_2x.png"
-              />
-            </div>
-          </div>
-          <div class="col-md-6" style="border: 1px solid yellowgreen">
-            <div class="row">
-              <div class="col-md-8">
-                <div class="hero">
-                  <div class="middle-header">
-                    <div class="private-service">
-                      <a href="mailto:contact@aiboosters.co.uk" class="contact">Home</a>
-                  </div>
-                    <div class="private-service">
-                        <a href="mailto:contact@aiboosters.co.uk" class="contact">Contact</a>
-                    </div>                  
-                    <div class="private-service1">
-                        <a href="{% url 'pricing_table' %}" class="pricing" id="pricing-link">Pricing</a>
-                    </div>
-                  
-                  </div>
+      <header class="built-in-europe">
+        <div class="rgpd-banner">
+          <div class="built-in-europe1 py-2">Built in Europe. First on privacy.</div>
+        </div>
+
+        <div class="header">
+          <div class="container my-5">
+            <div class="row align-items-center justify-content-around">
+              <div class="col-md-3 text-md-center text-lg-start ">
+                <div class="">
+                  <img class="logo-ai-boosters-header-icon" loading="lazy" alt="AiBoosters UK"
+                    src="csbtenants/images/logo-ai-boosters-header_2x.png" />
                 </div>
               </div>
-              <div class="col-md-4 text-end">
-                <button class="button" id="login-button">
-                  <div class="log-in">Log in</div>
-                </button>
+              <div class="col-md-7">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="hero">
+                      <div class="middle-header">
+                        <div class="private-service">
+                          <a href="mailto:contact@aiboosters.co.uk" class="contact">Home</a>
+                        </div>
+                        <div class="private-service mx-2">
+                          <a href="mailto:contact@aiboosters.co.uk" class="contact">Contact</a>
+                        </div>
+                        <div class="private-service1">
+                          <a href="{% url 'pricing_table' %}" class="pricing" id="pricing-link">Pricing</a>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 text-end">
+                    <button class="button flex-end" id="login-button">
+                      <div class="log-in">Log in</div>
+                    </button>
+                  </div>
+                </div>
+
               </div>
             </div>
- 
-            </div>
-          </div>
             <div class="juliet-image">
-             
+
             </div>
           </div>
         </div>
 
-        </header>
+      </header>
 
-        <div class="hero1 justify-content-center">
-          <div class="container my-5">
-            <div class="row justify-content-around">
-          <div class="col-md-5 py-5 text-start">
-            <h1 class="">Privacy & AI</h1>
-            <div class="aibooster-provides-the my-5">
-              AiBoosters provides chatbot services with the most privacy in the market. Ease of use and connectivity are our priority.
-            </div>
-            <button class="bouton-log-in show-pricing" id="show-pricing-button">
-              <div class="build-a-chatbot">Build a chatbot for free</div>
-            </button>
-          </div>
-          <div class="col-md-5">
-            <iframe
-              class="a-suppr-video-header w-100"
-              src="https://www.youtube.com/embed/4lpHPhPrUzQ?controls=0&modestbranding=1&rel=0&loop=0&playlist=4lpHPhPrUzQ"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              
-            ></iframe>
-          </div>
-        </div>
-          </div>
-          
-        </div>
-      </section>
-
-      <div class="our-solution">
-      </div>
-
-      <section class="juliet">
-        <div class="juliet-pic">
-          <img
-            class="juliet-pic-icon"
-            loading="lazy"
-            alt=""
-            src="{% static 'csbtenants/images/juliet-pic@2x.png' %}"
-          />
-        </div>
-        <div class="juliet-right">
-          <h2 class="meet-juliet-your-title">
-            Meet Juliet, your personal customer relationship agent
-          </h2>
-          <div class="immediately-operating-totally-title">
-            <UL>
-            <LI class="immediately-operating">Immediately operating</LI>
-            <LI class="totally-autonomous">Totally autonomous</LI>
-            <LI class="gives-the-most">Gives the most on-point answers</LI>
-            <LI class="complete-cyber-security">Complete cyber-security</LI>
-            </UL>
-          </div>
-          <button class="bouton-log-in show-pricing" id="show-pricing-button">
-            <div class="build-a-chatbot">Build a chatbot for free</div>
-          </button>
-        </div>
-      </section>
-
-      <div class="our-solution">
-      </div>
-
-      <div class="your-human-agents"></div>
-      <section class="adopt-juliet">
-        <div class="advantages">
-       
-          <div class="suitcase-parent">
-            <h2 class="suitcase-title">Privacy is pinnacle</h2>
-            <div class="suitcase">
-                Privacy is paramount. We do not store the chats, we do not use
-                the content, <B>the data does not leave our system.</B>
-            </div>
-          </div>
-          
-          <div class="suitcase-parent">
-            <h2 class="suitcase-title">Ease of use</h2>
-            <div class="suitcase">
-                  <b>You instantly get</b> your chatbot by copy of a HTML snippet into your website.
-                  Simply upload your texts with information and Juliet <b>does the rest</b>.
-            </div>
-          </div>
-      
-          <div class="suitcase-parent">
-            <h2 class="suitcase-title">Connectivity</h2>
-            <div class="suitcase">
-                Connect to our chatbot from whatever system through our <b>API</b>. Download files in <b>csv</b>. 
-                Manage from wherever in the world. <b>Multi-user</b>. 
-            </div>
-          </div> 
-        </div>
-
-        <footer class="footer">
-          <div class="footer-left">
-            <div class="logos">
-              <a href="https://www.facebook.com/61557804696610/" target="_blank">
-                <img
-                  class="logo-fb-icon"
-                  loading="lazy"
-                  alt="facebook"
-                  src="{% static 'csbtenants/images/logo-fb@2x.png' %}"
-                />
-              </a>
-
-              <a href="https://www.linkedin.com/company/103141851/" target="_blank">
-                <img
-                  class="logo-lkdn-icon"
-                  loading="lazy"
-                  alt="linked in"
-                  src="{% static 'csbtenants/images/logo-lkdn@2x.png' %}"
-                />
-              </a>
-            </div>
-            <img
-              class="logo-ai-boosters-header-icon1"
-              alt="AiBoosters UK"
-              src="{% static 'csbtenants/images/logo-ai-boosters-header@2x.png' %}"
-            />
-
-            <div class="aiboosters-inc-all">
-              @2024 AiBoosters UK. All rights reserved.
-            </div>
-            <div class="contactaiboostersbe">
-              <a href="mailto:contact@aiboosters.co.uk">contact@aiboosters.co.uk</a>
-            </div>
-            
-          </div>
-          <div class="footer-right">
-            <div class="adopt-juliet1">
-              <div class="ready-to-adopt">Ready to adopt Juliet ?</div>
+      <div class="hero1 justify-content-center">
+        <div class="container my-5">
+          <div class="row justify-content-around">
+            <div class="col-md-5 py-5 text-start">
+              <h1 class="">Privacy & AI</h1>
+              <div class="aibooster-provides-the my-5">
+                AiBoosters provides chatbot services with the most privacy in the market. Ease of use and connectivity
+                are our priority.
+              </div>
               <button class="bouton-log-in show-pricing" id="show-pricing-button">
                 <div class="build-a-chatbot">Build a chatbot for free</div>
               </button>
             </div>
-            <div class="policy">
-              <a href="{% url 'terms_of_service' %}" class="terms-of-service">Terms of Service</a>
-              <a href="{% url 'privacy_policy' %}" class="privacy-policy">Privacy Policy</a>
-              <a href="{% url 'cookie_policy' %}" class="cookie-policy">Cookie Policy</a>
+            <div class="col-md-5">
+              <iframe class="a-suppr-video-header w-100"
+                src="https://www.youtube.com/embed/4lpHPhPrUzQ?controls=0&modestbranding=1&rel=0&loop=0&playlist=4lpHPhPrUzQ"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </div>
-          </div>          
-        </footer>
-      </section>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="our-solution">
     </div>
 
-    <div class="user-infoline">
-      <table>
-          <tr>
-              <td style="padding-right: 10px;"> Version: <b>{{csb_version}}</b></td>
-              
-              {% if user.is_authenticated %}
-                  <td style="padding-right: 10px;">Username: <b>{{ user.username }}</b></td>
-                  <td>Status: <b>
-                      {% if user.is_superuser %}
-                          Superuser
-                      {% elif user.is_staff %}
-                          Staff
-                      {% else %}
-                          Regular
-                      {% endif %}
-                      </b>
-                  </td>
-              {% else %}
-                  <td>Anonymous User</td>
-              {% endif %}
-          </tr>
-      </table>
+    <section class="juliet">
+      <div class="juliet-pic">
+        <img class="juliet-pic-icon" loading="lazy" alt="" src="{% static 'csbtenants/images/juliet-pic@2x.png' %}" />
+      </div>
+      <div class="juliet-right">
+        <h2 class="meet-juliet-your-title">
+          Meet Juliet, your personal customer relationship agent
+        </h2>
+        <div class="immediately-operating-totally-title">
+          <UL>
+            <LI class="immediately-operating">Immediately operating</LI>
+            <LI class="totally-autonomous">Totally autonomous</LI>
+            <LI class="gives-the-most">Gives the most on-point answers</LI>
+            <LI class="complete-cyber-security">Complete cyber-security</LI>
+          </UL>
+        </div>
+        <button class="bouton-log-in show-pricing" id="show-pricing-button">
+          <div class="build-a-chatbot">Build a chatbot for free</div>
+        </button>
+      </div>
+    </section>
+
+    <div class="our-solution">
     </div>
 
-    <script>
-      document.getElementById('show-pricing-button').addEventListener('click', function() {
+    <div class="your-human-agents"></div>
+    <section class="adopt-juliet">
+      <div class="advantages">
+
+        <div class="suitcase-parent">
+          <h2 class="suitcase-title">Privacy is pinnacle</h2>
+          <div class="suitcase">
+            Privacy is paramount. We do not store the chats, we do not use
+            the content, <B>the data does not leave our system.</B>
+          </div>
+        </div>
+
+        <div class="suitcase-parent">
+          <h2 class="suitcase-title">Ease of use</h2>
+          <div class="suitcase">
+            <b>You instantly get</b> your chatbot by copy of a HTML snippet into your website.
+            Simply upload your texts with information and Juliet <b>does the rest</b>.
+          </div>
+        </div>
+
+        <div class="suitcase-parent">
+          <h2 class="suitcase-title">Connectivity</h2>
+          <div class="suitcase">
+            Connect to our chatbot from whatever system through our <b>API</b>. Download files in <b>csv</b>.
+            Manage from wherever in the world. <b>Multi-user</b>.
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-left">
+          <div class="logos">
+            <a href="https://www.facebook.com/61557804696610/" target="_blank">
+              <img class="logo-fb-icon" loading="lazy" alt="facebook"
+                src="{% static 'csbtenants/images/logo-fb@2x.png' %}" />
+            </a>
+
+            <a href="https://www.linkedin.com/company/103141851/" target="_blank">
+              <img class="logo-lkdn-icon" loading="lazy" alt="linked in"
+                src="{% static 'csbtenants/images/logo-lkdn@2x.png' %}" />
+            </a>
+          </div>
+          <img class="logo-ai-boosters-header-icon1" alt="AiBoosters UK"
+            src="{% static 'csbtenants/images/logo-ai-boosters-header@2x.png' %}" />
+
+          <div class="aiboosters-inc-all">
+            @2024 AiBoosters UK. All rights reserved.
+          </div>
+          <div class="contactaiboostersbe">
+            <a href="mailto:contact@aiboosters.co.uk">contact@aiboosters.co.uk</a>
+          </div>
+
+        </div>
+        <div class="footer-right">
+          <div class="adopt-juliet1">
+            <div class="ready-to-adopt">Ready to adopt Juliet ?</div>
+            <button class="bouton-log-in show-pricing" id="show-pricing-button">
+              <div class="build-a-chatbot">Build a chatbot for free</div>
+            </button>
+          </div>
+          <div class="policy">
+            <a href="{% url 'terms_of_service' %}" class="terms-of-service">Terms of Service</a>
+            <a href="{% url 'privacy_policy' %}" class="privacy-policy">Privacy Policy</a>
+            <a href="{% url 'cookie_policy' %}" class="cookie-policy">Cookie Policy</a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </div>
+
+  <div class="user-infoline">
+    <table>
+      <tr>
+        <td style="padding-right: 10px;"> Version: <b>{{csb_version}}</b></td>
+
+        {% if user.is_authenticated %}
+        <td style="padding-right: 10px;">Username: <b>{{ user.username }}</b></td>
+        <td>Status: <b>
+            {% if user.is_superuser %}
+            Superuser
+            {% elif user.is_staff %}
+            Staff
+            {% else %}
+            Regular
+            {% endif %}
+          </b>
+        </td>
+        {% else %}
+        <td>Anonymous User</td>
+        {% endif %}
+      </tr>
+    </table>
+  </div>
+
+  <script>
+    document.getElementById('show-pricing-button').addEventListener('click', function () {
+      window.location.href = "{% url 'pricing_table' %}";
+    });
+    document.querySelectorAll('.show-pricing').forEach(button => {
+      button.addEventListener('click', function () {
         window.location.href = "{% url 'pricing_table' %}";
       });
-      document.querySelectorAll('.show-pricing').forEach(button => {
-        button.addEventListener('click', function() {
-          window.location.href = "{% url 'pricing_table' %}";
-        });
-      });
+    });
 
-      document.getElementById('login-button').addEventListener('click', function() {
-        window.location.href = '/accounts/login/';
-      });
+    document.getElementById('login-button').addEventListener('click', function () {
+      window.location.href = '/accounts/login/';
+    });
 
-      window.addEventListener("load", function(){
-        window.cookieconsent.initialise({
-          "palette": {
-            "popup": {
-              "background": "#000"
-            },
-            "button": {
-              "background": "#f1d600"
-            }
+    window.addEventListener("load", function () {
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#000"
           },
-          "theme": "classic",
-          "content": {
-            "message": "This website uses cookies to ensure you get the best experience on our website.",
-            "dismiss": "Got it!",
-            "link": "Learn more",
-            "href": "/cookie_policy/"
+          "button": {
+            "background": "#f1d600"
           }
-        });
+        },
+        "theme": "classic",
+        "content": {
+          "message": "This website uses cookies to ensure you get the best experience on our website.",
+          "dismiss": "Got it!",
+          "link": "Learn more",
+          "href": "/cookie_policy/"
+        }
       });
-    </script>
-    
+    });
+  </script>
 
 
-    <script>
-        fetch('/api/get-chatbot-config/')
-        .then(response => response.json())
-        .then(config => {
-            window.myChatbotConfig = {
-            chatbotID: config.chatbotID,
-            domain: config.domain
-            };
-    
-            // Now load the chatbot.js script
-            var script = document.createElement('script');
-            script.type = "text/javascript";
-            script.src = '/static/csbtenants/chatbot.js';
-            script.defer = true;
-            script.onload = function() {
-                console.log('chatbot.js loaded successfully.');
-                // leave the log, otherwise the onload is not executed.
-                // This initiates the initChatbot
-            };
-            document.body.appendChild(script);
-        })
-        .catch(error => console.error('Failed to load chatbot configuration:', error));
-    </script>
-  
-    <!---
+
+  <script>
+    fetch('/api/get-chatbot-config/')
+      .then(response => response.json())
+      .then(config => {
+        window.myChatbotConfig = {
+          chatbotID: config.chatbotID,
+          domain: config.domain
+        };
+
+        // Now load the chatbot.js script
+        var script = document.createElement('script');
+        script.type = "text/javascript";
+        script.src = '/static/csbtenants/chatbot.js';
+        script.defer = true;
+        script.onload = function () {
+          console.log('chatbot.js loaded successfully.');
+          // leave the log, otherwise the onload is not executed.
+          // This initiates the initChatbot
+        };
+        document.body.appendChild(script);
+      })
+      .catch(error => console.error('Failed to load chatbot configuration:', error));
+  </script>
+
+  <!---
     <script>
         window.myChatbotConfig = {
             chatbotID: "cus_OpfKTOBYlyL65z",
