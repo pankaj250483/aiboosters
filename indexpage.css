@@ -137,6 +137,7 @@ button:hover {
   top: 10px;
   font-size: 12px;
   align-items: self-end;
+  max-width: 100%;
 }
 .hero,
 .middle-header {

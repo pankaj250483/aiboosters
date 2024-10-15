@@ -30,12 +30,9 @@
       /* white color with 0 opacity */
     }
 
-    body.background {
-      background-size: cover;
-      background-position: bottom;
-      background-attachment: fixed;
-      min-height: 100%;
-      max-width: 100%;
+    body
+    {
+      max-width: 100% !important;
     }
 
     a {
@@ -46,11 +43,9 @@
   </style>
 </head>
 
-<body class="background">
+<body>
   <div class="landing-page">
     <section class="r-g-p-d">
-
-
 
       <header class="built-in-europe">
         <div class="rgpd-banner">
@@ -58,17 +53,17 @@
         </div>
 
         <div class="header">
-          <div class="container my-5">
+          <div class="container my-lg-5">
             <div class="row align-items-center justify-content-around">
-              <div class="col-md-3 text-md-center text-lg-start ">
+              <div class="col-lg-3 text-md-center text-lg-start ">
                 <div class="">
                   <img class="logo-ai-boosters-header-icon" loading="lazy" alt="AiBoosters UK"
                     src="csbtenants/images/logo-ai-boosters-header_2x.png" />
                 </div>
               </div>
-              <div class="col-md-7">
+              <div class="col-lg-7">
                 <div class="row">
-                  <div class="col-md-8">
+                  <div class="col-lg-8">
                     <div class="hero">
                       <div class="middle-header">
                         <div class="private-service">
@@ -84,7 +79,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4 text-end">
+                  <div class="col-lg-4 text-center pt-3 text-md-end">
                     <button class="button flex-end" id="login-button">
                       <div class="log-in">Log in</div>
                     </button>
@@ -96,25 +91,27 @@
             <div class="juliet-image">
 
             </div>
+            <hr class="d-lg-none d-md-block">
           </div>
+
         </div>
 
       </header>
-
+      
       <div class="hero1 justify-content-center">
-        <div class="container my-5">
+        <div class="container my-4">
+         
           <div class="row justify-content-around">
-            <div class="col-md-5 py-5 text-start">
-              <h1 class="">Privacy & AI</h1>
+            <div class="col-lg-5 pb-4 text-lg-start">
+              <h1 class="">Privacy & Confidentiality</h1>
               <div class="aibooster-provides-the my-5">
-                AiBoosters provides chatbot services with the most privacy in the market. Ease of use and connectivity
-                are our priority.
+                At AiBoosters, we understand the importance of confidentiality, especially for industries like healthcare, law, and finance. Juliet, our customer service chatbot, ensures that every conversation remains completely private. No chats are stored, and no data leaves our system. Your clients' privacy is our top priority.
               </div>
               <button class="bouton-log-in show-pricing" id="show-pricing-button">
                 <div class="build-a-chatbot">Build a chatbot for free</div>
               </button>
             </div>
-            <div class="col-md-5">
+            <div class="col-lg-5">
               <iframe class="a-suppr-video-header w-100"
                 src="https://www.youtube.com/embed/4lpHPhPrUzQ?controls=0&modestbranding=1&rel=0&loop=0&playlist=4lpHPhPrUzQ"
                 frameborder="0"
@@ -130,103 +127,120 @@
     <div class="our-solution">
     </div>
 
-    <section class="juliet">
-      <div class="juliet-pic">
-        <img class="juliet-pic-icon" loading="lazy" alt="" src="/csbtenants/images/juliet-pic_2x.png" />
+    <section class="container"> <!-- juliet -->
+      <div class="row justify-content-around">
+      <div class="col-lg-11 text-center text-lg-start">    
+        <h2 class="display-4">Meet Juliet,</h2>
+        <h5 class="pb-4 text-secondary">Your Confidential Customer Service Agent...</h5>
       </div>
-      <div class="juliet-right">
-        <h2 class="meet-juliet-your-title">
-          Meet Juliet, your personal customer relationship agent
-        </h2>
-        <div class="immediately-operating-totally-title">
-          <UL>
-            <LI class="immediately-operating">Immediately operating</LI>
-            <LI class="totally-autonomous">Totally autonomous</LI>
-            <LI class="gives-the-most">Gives the most on-point answers</LI>
-            <LI class="complete-cyber-security">Complete cyber-security</LI>
+      <div class="col-lg-4 text-center text-lg-start">
+    
+        <img class="img-fluid rounded shadow-lg w-75" loading="lazy" alt="" src="/csbtenants/images/juliet-pic_2x.png" />
+      </div>
+      <div class="col-lg-6">
+       
+        <div>
+          <UL class="mb-5">
+            <LI><b class="pb-2 d-block">Confidentiality First:</b> <p class="text-secondary">Ensures complete privacy for all conversations.</p></LI>
+            <LI><b class="pb-2 d-block">Increase Customer Satisfaction:</b><p class="text-secondary">Handle more customer queries efficiently, leading to higher satisfaction and increased profits.</p> </LI>
+            <LI><b class="pb-2 d-block">Optimized for Smartphones:</b> <p class="text-secondary">Features speech-to-text functionality for seamless use on mobile devices.</p> </LI>
+            <LI><b class="pb-2 d-block">Easy Setup:</b> <p class="text-secondary">Simply provide the necessary content, and Juliet does the rest.</p></LI>
+            
           </UL>
         </div>
         <button class="bouton-log-in show-pricing" id="show-pricing-button">
           <div class="build-a-chatbot">Build a chatbot for free</div>
         </button>
       </div>
+    </div>
     </section>
 
     <div class="our-solution">
     </div>
 
     <div class="your-human-agents"></div>
+
     <section class="adopt-juliet">
+      <div class="container pb-5">
       <div class="advantages">
 
-        <div class="suitcase-parent">
-          <h2 class="suitcase-title">Privacy is pinnacle</h2>
+        <div class="suitcase-parent mb-lg-5">
+          <h2 class="suitcase-title">Confidentiality is Key</h2>
           <div class="suitcase">
-            Privacy is paramount. We do not store the chats, we do not use
-            the content, <B>the data does not leave our system.</B>
+            Confidentiality is crucial. With Juliet, you can be assured that no conversations are saved, and no data is used or shared. This makes Juliet the perfect solution for industries where privacy is paramount, such as healthcare, law, and finance.</B>
           </div>
         </div>
 
-        <div class="suitcase-parent">
+        <div class="suitcase-parent mb-lg-5"">
           <h2 class="suitcase-title">Ease of use</h2>
           <div class="suitcase">
-            <b>You instantly get</b> your chatbot by copy of a HTML snippet into your website.
-            Simply upload your texts with information and Juliet <b>does the rest</b>.
+            Juliet is designed for simplicity. Just copy a small HTML snippet into your website, upload your information, and Juliet takes care of the rest. It's that easy to have a fully functional chatbot on your site. 
           </div>
         </div>
 
-        <div class="suitcase-parent">
-          <h2 class="suitcase-title">Connectivity</h2>
+        <div class="suitcase-parent mb-lg-5"">
+          <h2 class="suitcase-title">Seamless Connectivity</h2>
           <div class="suitcase">
-            Connect to our chatbot from whatever system through our <b>API</b>. Download files in <b>csv</b>.
-            Manage from wherever in the world. <b>Multi-user</b>.
+            Juliet offers seamless connectivity through our API. Access and manage your chatbot from anywhere in the world, download data in CSV format, and enjoy multi-user support. Juliet integrates effortlessly with your existing systems.
           </div>
         </div>
       </div>
+    </div>
 
       <footer class="footer">
-        <div class="footer-left">
-          <div class="logos">
-            <a href="https://www.facebook.com/61557804696610/" target="_blank">
-              <img class="logo-fb-icon" loading="lazy" alt="facebook"
-                src="{% static 'csbtenants/images/logo-fb@2x.png' %}" />
-            </a>
-
-            <a href="https://www.linkedin.com/company/103141851/" target="_blank">
-              <img class="logo-lkdn-icon" loading="lazy" alt="linked in"
-                src="{% static 'csbtenants/images/logo-lkdn@2x.png' %}" />
-            </a>
-          </div>
+        <div class="container py-5">
+        <div class="row justify-content-around">
+        <div class="col-lg-5"> <!-- footer-left  -->
+    
           <img class="logo-ai-boosters-header-icon1" alt="AiBoosters UK"
-            src="{% static 'csbtenants/images/logo-ai-boosters-header@2x.png' %}" />
+            src="csbtenants/images/logo-ai-boosters-header_2x.png" />
 
-          <div class="aiboosters-inc-all">
-            @2024 AiBoosters UK. All rights reserved.
-          </div>
+            <div class="logos">
+              <a href="https://www.facebook.com/61557804696610/" target="_blank">
+                <img class="logo-fb-icon" loading="lazy" alt="facebook"
+                  src="csbtenants/images/logo-fb-2-1.png" />
+              </a>
+  
+              <a href="https://www.linkedin.com/company/103141851/" target="_blank">
+                <img class="logo-lkdn-icon" loading="lazy" alt="linked in"
+                  src="csbtenants/images/logo-lkdn-2-1.png" />
+              </a>
+            </div>
           <div class="contactaiboostersbe">
             <a href="mailto:contact@aiboosters.co.uk">contact@aiboosters.co.uk</a>
           </div>
 
         </div>
-        <div class="footer-right">
+
+        <div class="col-lg-5 text-center text-lg-end"> <!-- footer-right -->
           <div class="adopt-juliet1">
             <div class="ready-to-adopt">Ready to adopt Juliet ?</div>
             <button class="bouton-log-in show-pricing" id="show-pricing-button">
               <div class="build-a-chatbot">Build a chatbot for free</div>
             </button>
           </div>
-          <div class="policy">
-            <a href="{% url 'terms_of_service' %}" class="terms-of-service">Terms of Service</a>
-            <a href="{% url 'privacy_policy' %}" class="privacy-policy">Privacy Policy</a>
-            <a href="{% url 'cookie_policy' %}" class="cookie-policy">Cookie Policy</a>
-          </div>
+   
         </div>
+        <div class="col-lg-12 justify-content-center text-center align-items-around flex-row"> 
+          <!-- <div class="policy"> -->
+            <a href="{% url 'terms_of_service' %}" class="terms-of-service py-2 ">Terms of Service</a><span class="d-none d-lg-inline"> | </span>
+            <a href="{% url 'privacy_policy' %}" class="privacy-policy py-2">Privacy Policy</a><span class="d-none d-lg-inline "> | </span>
+            <a href="{% url 'cookie_policy' %}" class="cookie-policy py-2">Cookie Policy</a>
+          <!-- </div> -->
+        </div>
+        <div class="col-lg-12 text-center">
+          
+            @2024 AiBoosters UK. All rights reserved.
+          
+        </div>
+      </div>
+    </div>
       </footer>
     </section>
   </div>
 
-  <div class="user-infoline">
-    <table>
+  <div class="user-infolineXX container-fluid" style="clear:both;overflow:auto;">
+    <table class="table w-100">
       <tr>
         <td style="padding-right: 10px;"> Version: <b>{{csb_version}}</b></td>
 
