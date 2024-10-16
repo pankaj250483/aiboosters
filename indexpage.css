@@ -83,7 +83,7 @@ button:hover {
   max-width: 100%;
 }
 .logo-ai-boosters-header-icon {
-  width: 350px;
+  width: 200px;
   position: relative;
   max-height: 100%;
   object-fit: cover;
@@ -473,13 +473,25 @@ button:hover {
   max-width: 100%;
 }
 
+a:link, a:active, a:hover, a:visited
+{
+  color: black;
+  text-decoration: none;
+}
+
+a:active, a:hover
+{
+  color: goldenrod;
+  text-decoration: underline;
+}
+
 .logo-fb-icon,
 .logo-lkdn-icon {
-  height: 50px;
-  width: 50px;
+  height: 35px;
+  width: 35px;
   position: relative;
   object-fit: cover;
-  min-height: 50px;
+  min-height: 35px;
 }
 .logos {
   align-self: stretch;
